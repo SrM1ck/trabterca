@@ -1,0 +1,2 @@
+Q := A div B
+R := A mod B

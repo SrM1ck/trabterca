@@ -52,7 +52,7 @@ loop.norma(cria um loop)
 
 ## Exemplo de uso (TC-01)
 
-    norma> carregar exemplos/tc01.norma
+    norma> carregar tc01.norma
     norma> set A 5 B 3 C 0
     norma> run
     Registradores: A=8  B=3  C=0

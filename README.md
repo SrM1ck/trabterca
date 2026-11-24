@@ -42,12 +42,27 @@ escreva `exemplos/tc01.norma` no campo **Parameters**.
 | `reset` | Zera registradores, IP e ciclos |
 | `testes` | Roda os 4 casos de teste obrigatórios (TC-01 a TC-04) |
 | `sair` | Encerra |
+
+## O que cada TC faz?
+TC01.norma(Soma)
+TC02.norma(Subtração)
+TC03.norma(Multiplicação)
+TC04.norma(Divisão e Resto)
+loop.norma(cria um loop)
+
 ## Exemplo de uso (TC-01)
 
     norma> carregar exemplos/tc01.norma
     norma> set A 5 B 3 C 0
     norma> run
     Registradores: A=8  B=3  C=0
+
+## Exemplo de uso (loop.norma)
+
+    norma> carregar loop.norma
+    norma> limite 1000
+    norma> run
+    
 ## Linguagem dos programas (.norma)
 Instruções primitivas, uma por linha, com rótulo opcional:
 

@@ -217,14 +217,14 @@ while True:
     else:
         try:
             linha = input("norma> ").strip()
-        except EOFError:
+        except EOFError:    #caso raro caso de erro tipo alguem digitar Ctrl + z
             break
     if linha == "sair":
         break
     if linha == "":
         continue
     p = linha.split()
-    cmd = p[0].lower()
+    cmd = p[0].lower()   #converte o que foi digitado para minusculas
 
     if cmd in ("listar", "step", "run") and not carregado:
         print("Nenhum programa carregado. Use: carregar <arquivo>")
